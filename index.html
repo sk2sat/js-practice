@@ -10,13 +10,16 @@
 <script>
 document.write("JavaScript running!");
 
-var i = 10;
-var j = 5;
-document.write("i+j = " + (i+j))
-// i+jに括弧つけないと全部文字列として認識されて105って出た
+function neko()
+{
+	var str = "ねこ〜〜〜";
+	alert(str);
+}
 
 </script>
 <noscript>JS出来ないじゃん...</noscript>
+
+<button type="button" onclick="neko()">neko</button>
 
 </body>
 </html>
