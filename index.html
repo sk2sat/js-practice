@@ -16,10 +16,33 @@ function neko()
 	alert(str);
 }
 
+function printDay()
+{
+	var today = new Date();
+	var str;
+	switch(today.getDay()){
+		case 0: str="日"; break;
+		case 1: str="月"; break;
+		case 2: str="火"; break;
+		case 3: str="水"; break;
+		case 4: str="木"; break;
+		case 5: str="金"; break;
+		case 6: str="土"; break;
+		default:
+			alert(today.getDay() + ": おかしな曜日です！");
+			break;
+	}
+	str += "曜日";
+	document.write(str);
+	return str;
+}
+
 </script>
 <noscript>JS出来ないじゃん...</noscript>
 
 <button type="button" onclick="neko()">neko</button>
+
+<button type="button" onclick="printDay()">day</button>
 
 </body>
 </html>
